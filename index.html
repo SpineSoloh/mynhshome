@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourHome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"> <!-- Change 'index.html' to your home page link -->
+                    <img src="Logo.PNG" alt="Nursing Home Logo">
+                </a>
+            </div>            
+            <div class="nav-items">
+                <ul class="socialMedia">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="nav1">
+        <nav>
+            <ul>
+                <li><a href="#">Care Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Useful Information</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="header-right">
+                <a href="#">Franchising</a>
+                <a href="#">Careers</a>
+                <a href="#">Find your local office</a>
+                <input type="text" placeholder="Search..">
+            </div>
+        </nav>
+    </div>
+
+    <section id="hero">
+        <div class="hero-slider">
+            <div class="slide" style="background-image: url('nurse2.jpg');"></div>
+            <div class="slide" style="background-image: url('nurse3.jpg');"></div>
+            <div class="slide" style="background-image: url('nurse4.jpg');"></div>
+            <div class="slide" style="background-image: url('nurse5.jpg');"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to <br>Your Nursing Home</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere volutpat quam at cursus. Morbi fringilla ligula enim.</p>
+            <button>Watch our advert</button>
+            <div class="search">
+                <label for="postcode">Looking for care at home?</label>
+                <input type="text" id="postcode" placeholder="Enter your postcode">
+                <button>Go</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <!-- Awards Section -->
+        <div class="awards-section">
+            <div class="award">
+                <img src="cert1.png" alt="Award 1">
+            </div>
+            <div class="award">
+                <img src="cert2.png" alt="Award 2">
+            </div>
+            <div class="award">
+                <img src="cert3.png" alt="Award 3">
+            </div>
+            <div class="award">
+                <img src="cert4.jpg" alt="Award 4">
+            </div>
+            <div class="award">
+                <img src="cert5.jpg" alt="Award 4">
+            </div>
+            <div class="award">
+                <img src="cert2.png" alt="Award 4">
+            </div>
+        </div>
+        <div class="ad-content">
+            <div class="ad-video">
+                <video width="320" height="240" controls>
+                    <source src="your-ad-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="ad-statement">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2> <!-- Header with larger font size and weight -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo, nisl et dapibus ullamcorper, eros velit vehicula lorem, ut sollicitudin neque massa ut augue.</p>
+            </div>
+        </div>
+        
+    </section>
+    
+        <!-- Services Section -->
+        <div class="services-content">
+            <h2>Services</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, perferendis! Optio iste doloribus, accusamus sapiente libero dolore non, praesentium assumenda quae vel alias, exercitationem soluta rerum adipisci officia eligendi tenetur.</p>
+            <a href="#">Go to services page</a>
+        
+            <div class="services-grid">
+                <div class="service">
+                    <img src="nurse2.jpg" alt="Home Care & Support">
+                    <h3>Home care & support</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus voluptas, vero deserunt error rerum pariatur eum unde at quo! Officiis culpa reiciendis nobis expedita aperiam ut sequi velit doloremque quisquam?.</p>
+                </div>
+                <div class="service">
+                    <img src="nurse3.jpg" alt="Specialist Care">
+                    <h3>Specialist care</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi error vitae labore magni, tenetur dolor sunt recusandae architecto. Unde consequuntur vel hic accusantium consequatur qui temporibus ratione ut velit earum..</p>
+                </div>
+                <div class="service">
+                    <img src="nurse4.jpg" alt="Assistive Technology">
+                    <h3>Assistive technology</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio illo voluptatum, dignissimos architecto rerum id, cum non voluptatem, veritatis veniam neque tenetur iure esse ad cumque numquam a quisquam incidunt.</p>
+                </div>
+            </div>
+        </div>        
+
+        <section id="find-care">
+            <div class="find-care-content">
+                <h2>Find care near you</h2>
+                <p>Enter your city or postcode below to find your local office</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Enter your postcode">
+                    <button>Search</button>
+                </div>
+            </div>
+            <div id="map"></div>
+        </section>        
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="Logo2.PNG" alt="Nursing Home Logo">
+                <img src="images/award.png" alt="Award Logo">
+            </div>
+    
+            <div class="footer-links">
+                <h3>Useful links</h3>
+                <ul>
+                    <li><a href="#">Care services</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Useful Information</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-social-newsletter">
+                <div class="footer-social-career">
+                    <a href="#" class="btn-orange">Find your local office</a>
+                    <a href="#" class="btn-orange">Careers</a>
+                    <div class="social-media-icons">
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </div>
+                </div>
+            
+                <div class="footer-newsletter">
+                    <h3>Newsletter sign-up</h3>
+                    <a href="#" class="btn-orange">Sign me up</a>
+                </div>
+            </div>            
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script>
+        function initMap() {
+            var ukCenter = {lat: 54.559322, lng: -4.174804}; // Center the map on the UK
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 5,
+                center: ukCenter
+            });
+    
+            // Optional: Add a marker to the map
+            var marker = new google.maps.Marker({
+                position: ukCenter,
+                map: map
+            });
+        }
+    </script>
+    
+</body>
+</html>
