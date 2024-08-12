@@ -96,6 +96,49 @@ body {
     border-radius: 4px;
 }
 
+/* General Styles */
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #28a745;
+    border-bottom: 2px solid #eee;
+}
+
+/* Awards Section */
+.awards-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .nav1 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav1 nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .nav1 .header-right {
+        margin-top: 10px; /* Space between sections */
+    }
+
+    .awards-section {
+        flex-direction: column; /* Stack award items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .award img {
+        max-width: 80%; /* Make award images responsive */
+        margin: 10px 0; /* Space between images */
+    }
+}
+
+
 /* Hero Section */
 #hero {
     position: relative;
