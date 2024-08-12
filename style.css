@@ -309,29 +309,31 @@ body {
     text-align: center;
 }
 
-#find-care .find-care-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.find-care-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
 }
 
-#find-care .find-care-content p {
-    margin-bottom: 20px;
-    font-size: 14px;
+.find-care-content {
+    flex: 1; /* Allow this div to grow */
+    max-width: 600px; /* Limit the width */
+    margin-right: 20px; /* Add some spacing */
 }
 
-#find-care .search-bar {
-    display: inline-flex;
-    width: 60%;
+.search-bar {
+    display: flex;
+    margin-top: 20px;
 }
 
-#find-care .search-bar input {
+.search-bar input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px 0 0 4px;
     width: 80%;
 }
 
-#find-care .search-bar button {
+.search-bar button {
     padding: 10px 20px;
     background-color: #28a745;
     color: #fff;
@@ -340,17 +342,50 @@ body {
     border-radius: 0 4px 4px 0;
 }
 
+.email-input,
+.description-input {
+    margin-top: 10px; /* Add some spacing */
+}
+
+.email-input button{
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.description-input button{
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.description-input textarea {
+    width: 100%; /* Full width */
+    height: 100px; /* Adjust height as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Map styles */
 #map {
-    width: 100%;
-    height: 300px;
-    margin-top: 20px;
+    flex: 1; /* Allow this div to grow */
+    max-width: 400px; /* Limit the width */
+    height: 300px; /* Set height */
+    margin-left: 20px; /* Add some spacing */
 }
 
 /* Footer Section */
 footer {
     padding: 50px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: lightgray;
+    color: #fe0;
 }
 
 .footer-container {
@@ -378,7 +413,7 @@ footer {
 }
 
 .footer-links ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-size: 14px;
 }
@@ -397,7 +432,7 @@ footer {
     display: block;
     margin-bottom: 10px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #28a745;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -433,3 +468,121 @@ footer {
     border-radius: 4px;
     text-align: center;
 }
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .header-container, .nav1 nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+
+    .hero-content {
+        left: 5%;
+        max-width: 90%;
+    }
+
+    .ad-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .ad-video {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    #find-care .search-bar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #find-care .search-bar input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #find-care .search-bar button {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social-newsletter {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .services-content h2 {
+        font-size: 24px;
+    }
+
+    .card-content h3 {
+        font-size: 18px;
+    }
+
+    .footer-links h3, .footer-newsletter h3 {
+        font-size: 16px;
+    }
+
+    .footer-links ul li a {
+        font-size: 12px;
+    }
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333; /* Match with your footer background color */
+    color: #fff; /* Change text color if needed */
+}
+
+
+/* Existing styles remain unchanged below */
+
